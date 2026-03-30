@@ -313,8 +313,7 @@ Each call splits into 2:
     f(n-1)   f(n-2)
 
 Complexity
->Time = O(2ⁿ) 
->Space = O(n)
+> Time = O(2ⁿ) & Space = O(n)
 
 
 #### Divide & Conquer Recursion
@@ -326,8 +325,7 @@ binarySearch(arr, low, high)
 Understanding : Problem size reduces by half each time
 
 Complexity
->Time = O(log n)
->Space = O(log n)
+>Time = O(log n) & Space = O(log n)
 
 #### Tree Recursion (Multiple Branches)
 ``` java
@@ -338,9 +336,9 @@ fun(n){
 }
 ```
 Understanding : 3 calls per level
+
 Complexity
->Time = O(3ⁿ)
->Space = O(n)
+>Time = O(3ⁿ) & Space = O(n)
 
 #### Tail Recursion
 ```java
@@ -350,6 +348,6 @@ int fun(int n){
 }
 ```
 Understanding : Last operation is recursive call
+
 Complexity
-> Time = O(n)
-> Space = O(n) (Java doesn’t optimize)
+> Time = O(n) & Space = O(n) (Java doesn’t optimize)
